@@ -1,0 +1,171 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --background: 0 0% 100%;
+  --foreground: 20 14.3% 4.1%;
+  --muted: 60 4.8% 95.9%;
+  --muted-foreground: 25 5.3% 44.7%;
+  --popover: 0 0% 100%;
+  --popover-foreground: 20 14.3% 4.1%;
+  --card: 0 0% 100%;
+  --card-foreground: 20 14.3% 4.1%;
+  --border: 20 5.9% 90%;
+  --input: 20 5.9% 90%;
+  --primary: 262 83.3% 57.8%; /* Cyber purple */
+  --primary-foreground: 211 100% 99%;
+  --secondary: 60 4.8% 95.9%;
+  --secondary-foreground: 24 9.8% 10%;
+  --accent: 265 89% 78%; /* Lighter purple accent */
+  --accent-foreground: 24 9.8% 10%;
+  --destructive: 0 84.2% 60.2%;
+  --destructive-foreground: 60 9.1% 97.8%;
+  --ring: 262 83.3% 57.8%; /* Cyber purple */
+  --radius: 0.5rem;
+
+  /* Cyber theme colors */
+  --cyber-purple: 262 83.3% 57.8%;
+  --cyber-light-purple: 265 89% 78%;
+  --cyber-blue: 225 95% 66%;
+  --cyber-dark: 235 16% 15%;
+  --cyber-gray: 220 10% 45%;
+  --cyber-light-gray: 210 5% 87%;
+  --cyber-background: 235 21% 11%;
+  --cyber-success: 142 70.6% 45.3%;
+  --cyber-error: 0 84.2% 60.2%;
+  --cyber-pink: 330 81.2% 60.4%;
+  --cyber-neon: 150 100% 50%;
+  
+  /* Gradients */
+  --cyber-gradient: linear-gradient(90deg, hsl(225, 100%, 60%), hsl(260, 100%, 60%), hsl(330, 100%, 65%));
+}
+
+.dark {
+  --background: 235 21% 11%;
+  --foreground: 0 0% 98%;
+  --muted: 240 3.7% 15.9%;
+  --muted-foreground: 240 5% 64.9%;
+  --popover: 235 21% 11%;
+  --popover-foreground: 0 0% 98%;
+  --card: 240 6% 10%;
+  --card-foreground: 0 0% 98%;
+  --border: 240 3.7% 15.9%;
+  --input: 240 3.7% 15.9%;
+  --primary: 262 83.3% 57.8%; /* Cyber purple in dark mode */
+  --primary-foreground: 0 0% 100%;
+  --secondary: 240 3.7% 15.9%;
+  --secondary-foreground: 0 0% 98%;
+  --accent: 265 89% 78%; /* Lighter purple accent */
+  --accent-foreground: 0 0% 98%;
+  --destructive: 0 62.8% 30.6%;
+  --destructive-foreground: 0 0% 98%;
+  --ring: 262 83.3% 57.8%;
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply font-sans antialiased bg-white dark:bg-[hsl(var(--cyber-background))] text-[hsl(var(--cyber-dark))] dark:text-white transition-colors duration-200;
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    @apply font-medium;
+  }
+  
+  .cyber-watermark {
+    @apply fixed bottom-4 left-1/2 -translate-x-1/2 opacity-10 pointer-events-none z-0 select-none;
+    font-size: 8rem;
+    font-weight: 900;
+    letter-spacing: -0.05em;
+    line-height: 1;
+    background-image: var(--cyber-gradient);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+    filter: blur(1px);
+  }
+}
+
+@layer components {
+  /* Backgrounds */
+  .bg-cyber-purple {
+    @apply bg-[hsl(var(--cyber-purple))];
+  }
+  
+  .bg-cyber-gradient {
+    background-image: var(--cyber-gradient);
+  }
+  
+  .bg-cyber-success {
+    @apply bg-[hsl(var(--cyber-success))];
+  }
+  
+  .bg-cyber-error {
+    @apply bg-[hsl(var(--cyber-error))];
+  }
+  
+  /* Text colors */
+  .text-cyber-purple {
+    @apply text-[hsl(var(--cyber-purple))];
+  }
+  
+  .text-cyber-light-purple {
+    @apply text-[hsl(var(--cyber-light-purple))];
+  }
+  
+  .text-cyber-blue {
+    @apply text-[hsl(var(--cyber-blue))];
+  }
+  
+  .text-cyber-dark {
+    @apply text-[hsl(var(--cyber-dark))];
+  }
+  
+  .text-cyber-gray {
+    @apply text-[hsl(var(--cyber-gray))];
+  }
+  
+  .text-cyber-gradient {
+    background-image: var(--cyber-gradient);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+  }
+  
+  .text-cyber-success {
+    @apply text-[hsl(var(--cyber-success))];
+  }
+  
+  .text-cyber-error {
+    @apply text-[hsl(var(--cyber-error))];
+  }
+  
+  /* Border colors */
+  .border-cyber-light-gray {
+    @apply border-[hsl(var(--cyber-light-gray))];
+  }
+  
+  .border-cyber-purple {
+    @apply border-[hsl(var(--cyber-purple))];
+  }
+  
+  /* Buttons */
+  .btn-cyber {
+    @apply relative overflow-hidden bg-[hsl(var(--cyber-purple))] text-white font-medium py-2 px-4 rounded-md 
+           hover:bg-[hsl(var(--cyber-purple))]/90 transition-all duration-200
+           focus:outline-none focus:ring-2 focus:ring-[hsl(var(--cyber-purple))]/50 focus:ring-offset-2
+           active:translate-y-0.5 shadow-md;
+  }
+  
+  .btn-cyber-gradient {
+    @apply relative overflow-hidden text-white font-medium py-2 px-4 rounded-md
+           hover:opacity-90 transition-all duration-200
+           focus:outline-none focus:ring-2 focus:ring-[hsl(var(--cyber-purple))]/50 focus:ring-offset-2
+           active:translate-y-0.5 shadow-md;
+    background-image: var(--cyber-gradient);
+  }
+}

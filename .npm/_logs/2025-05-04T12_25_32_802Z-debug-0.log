@@ -1,0 +1,18 @@
+0 verbose cli /root/.nvm/versions/node/v22.15.0/bin/node /root/.nvm/versions/node/v22.15.0/lib/node_modules/npm/bin/npm-cli.js
+1 info using npm@10.9.2
+2 info using node@v22.15.0
+3 silly config load:file:/root/.nvm/versions/node/v22.15.0/lib/node_modules/npm/npmrc
+4 silly config load:file:/root/.npmrc
+5 silly config load:file:/root/.nvm/versions/node/v22.15.0/etc/npmrc
+6 verbose title npm exec drizzle-kit push
+7 verbose argv "exec" "--" "drizzle-kit" "push"
+8 verbose logfile logs-max:10 dir:/root/.npm/_logs/2025-05-04T12_25_32_802Z-
+9 verbose logfile /root/.npm/_logs/2025-05-04T12_25_32_802Z-debug-0.log
+10 silly logfile start cleaning logs, removing 1 files
+11 silly logfile done cleaning log files
+12 verbose cwd /root
+13 verbose os Linux 6.2.1-PRoot-Distro
+14 verbose node v22.15.0
+15 verbose npm  v10.9.2
+16 verbose exit 0
+17 info ok

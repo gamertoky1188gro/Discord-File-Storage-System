@@ -1,0 +1,22 @@
+status: 200
+date: Sat, 03 May 2025 13:53:36 GMT
+server: gunicorn
+x-powered-by: Zope (www.zope.org), Python (www.python.org)
+content-security-policy: frame-ancestors 'self';
+content-type: application/json
+strict-transport-security: max-age=15552000
+vary: Accept,Accept-Encoding
+x-content-type-options: nosniff
+x-frame-options: SAMEORIGIN
+x-launchpad-revision: e76edd883483c71c468bb038e98836435de44530
+x-lazr-notifications: []
+x-xss-protection: 1; mode=block
+x-vcs-revision: e76edd883483c71c468bb038e98836435de44530
+x-request-id: dc53bcab-c5b1-4bcd-b69e-87cd8bdca8e9
+content-length: 2271
+-content-encoding: gzip
+content-location: https://api.launchpad.net/devel/~mozillateam?name=%22thunderbird-next%22&ws.op=getPPAByName
+-varied-accept: application/json
+-varied-accept-encoding: gzip, deflate
+
+{"self_link": "https://api.launchpad.net/devel/~mozillateam/+archive/ubuntu/thunderbird-next", "web_link": "https://launchpad.net/~mozillateam/+archive/ubuntu/thunderbird-next", "resource_type_link": "https://api.launchpad.net/devel/#archive", "owner_link": "https://api.launchpad.net/devel/~mozillateam", "name": "thunderbird-next", "displayname": "Official PPA for Thunderbird Beta", "reference": "~mozillateam/ubuntu/thunderbird-next", "distribution_link": "https://api.launchpad.net/devel/ubuntu", "private": false, "suppress_subscription_notifications": false, "dependencies_collection_link": "https://api.launchpad.net/devel/~mozillateam/+archive/ubuntu/thunderbird-next/dependencies", "description": "This PPA contains releases of Thunderbird from the beta channel\n\nAll users of this PPA are encouraged to report any bugs they find. Instructions for reporting bugs can be found at https://wiki.ubuntu.com/MozillaTeam/Bugs. Please have a read of this before reporting a bug, as it may help save time\n\nPlease don't email the package uploader to report bugs. Not only is email not a good tool for tracking bugs, it also excludes anybody else from tracking or working on the issue.\n\nIf publishing is disabled for this PPA, there is no need to email the team or any of its members to tell them this. Publishing will be reneabled by a team member when it is appropriate to do so.\n\nFor questions and bugs with software in this PPA please *don't* contact mozillateam.", "signing_key_fingerprint": "738BEB9321D1AAEC13EA9391AEBDF4819BE21867", "require_virtualized": true, "build_debug_symbols": true, "publish_debug_symbols": true, "permit_obsolete_series_uploads": false, "authorized_size": 32768, "status": "Active", "external_dependencies": null, "metadata_overrides": null, "processors_collection_link": "https://api.launchpad.net/devel/~mozillateam/+archive/ubuntu/thunderbird-next/processors", "enabled_restricted_processors_collection_link": "https://api.launchpad.net/devel/~mozillateam/+archive/ubuntu/thunderbird-next/enabled_restricted_processors", "publishing_method": "Local", "repository_format": "Debian", "publish": true, "relative_build_score": 0, "http_etag": "\"a0f5e39a24d3f1a555288bb555100e013dd440c7-5055c6ccef22c64bb28b8de873df5b19f68b5d7f\""}
